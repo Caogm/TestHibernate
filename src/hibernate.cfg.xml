@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!-- 当用这种方式的时候需要配置一个hibernate.properties文件 -->
+<hibernate-configuration>
+    <session-factory>
+       
+        <!-- 关联映射文件 -->
+        <mapping resource="cn/test/hibernate/Customer.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

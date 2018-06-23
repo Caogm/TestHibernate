@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入约束 -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- 建立类与表的映射 -->
+	<!-- class标签：用于映射类与表的关系 name：类的全路径 table：表名 -->
+	<class name="cn.test.hibernate.Customer" table="customer">
+		<!-- 建立类中属性与表中的字段映射 -->
+		<!-- 唯一标识 -->
+		<!-- 使用id的标签配置唯一属性 -->
+		<!-- 在<id>标签中配置一个主键的生成策略 -->
+		<id name="id" column="id">
+			<generator class="native"></generator>
+		</id>
+		
+		<!-- 普通属性 -->
+		<!-- property标签：映射类中的普通属性 name类中属性的名称，column表中字段名称 -->
+		<property name="name" column="name"/>
+		<property name="age" column="age"/>
+	</class>
+</hibernate-mapping>
