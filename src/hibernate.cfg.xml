@@ -6,8 +6,9 @@
 <!-- 当用这种方式的时候需要配置一个hibernate.properties文件 -->
 <hibernate-configuration>
     <session-factory>
-       
+  
         <!-- 关联映射文件 -->
-        <mapping resource="cn/test/hibernate/Customer.hbm.xml"/>
+        	<mapping resource="cn/test/hibernate/Customer.hbm.xml"/>
+        
     </session-factory>
 </hibernate-configuration>
