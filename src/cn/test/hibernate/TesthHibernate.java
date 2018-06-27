@@ -48,7 +48,7 @@ public class TesthHibernate {
 	public void demo2() {
 		// 1.创建配置对象
 		Configuration configuration = new Configuration();
-		// 2.加载核心配置文件
+		// 2.加载核心配置文件hibernate.cfg.xml，其中去获取Customer.hbm.xml（包含对象关系映射）
 		configuration.configure();
 		// 3.创建serviceRegistry对象
 		ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().build();
