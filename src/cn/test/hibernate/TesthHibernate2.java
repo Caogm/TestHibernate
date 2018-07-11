@@ -17,10 +17,17 @@ public class TesthHibernate2 {
 
 		// 向数据库中插入一条记录
 		Customer customer = new Customer();
-		customer.setName("测试3");
+		customer.setName("测试5");
+		customer.setAge(26);
+		// 添加对象
+		session.save(customer);
+
+		customer.setId(10);
+		customer.setName("测试4");
 		customer.setAge(25);
 
-		session.save(customer);
+		// 添加并更新对象
+		session.saveOrUpdate(customer);
 		// 事务提交
 		tx.commit();
 
